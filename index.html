@@ -6,6 +6,7 @@
   <title>Baby Life</title>
   <!-- script -->
   <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
 	<script src="https://unpkg.com/vue/dist/vue.js"></script>
   <script src="https://unpkg.com/vuex/dist/vuex.js"></script>
 	<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
@@ -17,6 +18,11 @@
     <div class="wrap">
       <header class="main-header size-boxing">
         <img src="resource/img/logo.png" />
+        <div class="main-menu"
+          @click="isActive = !isActive"
+          :class="{active: isActive}">
+            <div class="menu-line" ></div>
+        </div>
       </header>
       <div class="container">
         <div class="headline-image">
@@ -25,7 +31,15 @@
           <h1>육아 일기</h1>
           <ul>
             <li v-for="t in timePeriod" class="time-period">
-              {{ t.text }}
+              <div class="time-left"> </div>
+              <div class="time-divide">
+                <div class="tree-first">
+                </div>
+                <div class="tree-second">
+                </div>
+              </div>
+              <div class="time-right"> </div>
+              <!-- {{ t.text }} -->
             </li>
           </ul>
         </section>
