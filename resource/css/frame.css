@@ -26,8 +26,6 @@
   top: 50%;
   right: 0%;
   transform: translate(-50%, -50%);
-  width: 80px;
-  height: 80px;
   cursor: pointer;
 }
 
@@ -117,6 +115,13 @@
   width: 100%;
   height: 100%;
   }
+.time-period .time-left.even,
+.time-period .time-right.even{
+  background: url(../../resource/img/illust-tree.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 95%;
+}
 
 .time-period .time-divide{
   width: 60px;
@@ -127,17 +132,17 @@
 
 .tree-first{
   height: 90%;
-  background-color: #b48443;
+  background-color: #caa97b;
   margin: 0 3px;
   border-left: 4px solid #531b0a;
   border-right: 4px solid #531b0a;
-  border-bottom: 4px solid #b48443;
+  border-bottom: 4px solid #caa97b;
   box-shadow: 4px 4px 5px rgba(0,0,0,.2);
 }
 
 .tree-second{
   height: 10%;
-  background-color: #b48443;
+  background-color: #caa97b;
   border-left: 4px solid #531b0a;
   border-right: 4px solid #531b0a;
   border-bottom: 4px solid #531b0a;

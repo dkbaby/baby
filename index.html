@@ -30,15 +30,13 @@
         <section class="main-section size-boxing">
           <h1>육아 일기</h1>
           <ul>
-            <li v-for="t in timePeriod" class="time-period">
-              <div class="time-left"> </div>
+            <li v-for="(t, index) in timePeriod" class="time-period">
+              <div class="time-left" :class="{even: isEven}"></div>
               <div class="time-divide">
-                <div class="tree-first">
-                </div>
-                <div class="tree-second">
-                </div>
+                <div class="tree-first"></div>
+                <div class="tree-second"></div>
               </div>
-              <div class="time-right"> </div>
+              <div class="time-right" :class="{even: isEven}"> </div>
               <!-- {{ t.text }} -->
             </li>
           </ul>

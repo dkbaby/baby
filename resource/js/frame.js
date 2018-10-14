@@ -20,6 +20,12 @@ var app1 = new Vue({
   methods:{
     myFilter: function(){
       this.isActive = !this.isActive;
+    },
+    isEven :function(){
+      return this.index % 2 != 0 ? true: false
     }
+  },
+  computed: {
+
   }
 })
