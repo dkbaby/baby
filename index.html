@@ -16,17 +16,23 @@
   <body>
     <div class="wrap">
       <header class="main-header size-boxing">
+        <img src="resource/img/logo.png" />
       </header>
       <div class="container">
         <div class="headline-image">
         </div>
-        <section class="size-boxing">
-          <article>
-          </article>
+        <section class="main-section size-boxing">
+          <h1>육아 일기</h1>
+          <ul>
+            <li v-for="t in timePeriod" class="time-period">
+              {{ t.text }}
+            </li>
+          </ul>
         </section>
       </div>
-      <footer>
+      <footer class="main-footer">
       </footer>
     </div>
   </body>
+<script src="resource/js/frame.js"></script>
 </html>
