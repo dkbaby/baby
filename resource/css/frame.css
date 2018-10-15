@@ -124,7 +124,7 @@
 }
 
 .time-period .time-divide{
-  width: 60px;
+  width: 40px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -132,17 +132,17 @@
 
 .tree-first{
   height: 90%;
-  background-color: #caa97b;
-  margin: 0 3px;
+  background-color: #945d0f;
+  margin: 0 2px;
   border-left: 4px solid #531b0a;
   border-right: 4px solid #531b0a;
-  border-bottom: 4px solid #caa97b;
+  border-bottom: 4px solid #945d0f;
   box-shadow: 4px 4px 5px rgba(0,0,0,.2);
 }
 
 .tree-second{
   height: 10%;
-  background-color: #caa97b;
+  background-color: #945d0f;
   border-left: 4px solid #531b0a;
   border-right: 4px solid #531b0a;
   border-bottom: 4px solid #531b0a;
