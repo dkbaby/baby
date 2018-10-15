@@ -114,14 +114,77 @@
 .time-period .time-right{
   width: 100%;
   height: 100%;
-  }
-.time-period .time-left.even,
-.time-period .time-right.even{
-  background: url(../../resource/img/illust-tree.png);
+  display: flex;
+}
+
+.time-period .time-left{
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+
+
+.time-period:nth-child(2n) .time-left,
+.time-period:nth-child(2n-1) .time-right{
+//background-color: red;
+}
+
+.time-period:nth-child(2n-1) .time-right .stem:first-child{
+  width: 10px;
+  height: 60%;
+  background-color: #945d0f;
+  transform: rotate(60deg);
+  border-left: 2px solid #531b0a;
+  border-right: 2px solid #531b0a;
+  position: relative;
+  top: 30px;
+  left: 10px;
+  border-top-right-radius: 10px;
+}
+
+.time-period:nth-child(2n-1) .time-right .stem:nth-child(2){
+  width: 10px;
+  height: 60%;
+  background-color: #945d0f;
+  transform: rotate(40deg);
+  border-left: 2px solid #531b0a;
+  border-right: 2px solid #531b0a;
+  position: relative;
+  top: 0px;
+  left: 35px;
+  border-bottom-right-radius: 5px;
+}
+
+.time-period:nth-child(2n) .time-left .stem:first-child{
+  width: 10px;
+  height: 60%;
+  background-color: #945d0f;
+  transform: rotate(-60deg);
+  border-left: 2px solid #531b0a;
+  border-right: 2px solid #531b0a;
+  position: relative;
+  top: 30px;
+  right: 5px;
+  border-top-left-radius: 10px;
+}
+
+.time-period:nth-child(2n) .time-left .stem:nth-child(2){
+  width: 10px;
+  height: 60%;
+  background-color: #945d0f;
+  transform: rotate(-40deg);
+  border-left: 2px solid #531b0a;
+  border-right: 2px solid #531b0a;
+  position: relative;
+  top: 0px;
+  right: 52px;
+  border-bottom-left-radius: 7px;
+}
+
+  /* background: url(../../resource/img/illust-tree.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 95%;
-}
+  background-size: 95%; */
 
 .time-period .time-divide{
   width: 40px;
@@ -138,6 +201,7 @@
   border-right: 4px solid #531b0a;
   border-bottom: 4px solid #945d0f;
   box-shadow: 4px 4px 5px rgba(0,0,0,.2);
+  z-index: 1;
 }
 
 .tree-second{
@@ -150,6 +214,7 @@
   border-top-right-radius: 4px;
   position: relative;
   box-shadow: 4px 4px 5px rgba(0,0,0,.2);
+  z-index: 1;
 }
 
 .tree-second:before{
