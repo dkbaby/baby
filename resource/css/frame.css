@@ -176,9 +176,9 @@
   border-left: 2px solid #531b0a;
   border-right: 2px solid #531b0a;
   position: relative;
-  top: 0px;
-  right: 52px;
-  border-bottom-left-radius: 7px;
+  bottom: 1px;
+  right: 51px;
+  border-bottom-left-radius: 5px;
 }
 
   /* background: url(../../resource/img/illust-tree.png);
