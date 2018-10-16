@@ -39,8 +39,9 @@
           <ul>
             <li v-for="(t, index) in timePeriod" class="time-period">
               <div class="time-left">
-                <div class="stem"> </div>
-                <div class="stem"> </div>
+                <div class="stem"></div>
+                <div class="stem"></div>
+                <div class="flowers"></div>
               </div>
               <div class="time-divide">
                 <div class="tree-first"></div>
@@ -49,6 +50,9 @@
               <div class="time-right">
                 <div class="stem"></div>
                 <div class="stem"></div>
+                <div class="flowers">
+                  <div class="flower" v-for="f in 6"></div>
+                </div>
               </div>
               <!-- {{ t.text }} -->
             </li>
