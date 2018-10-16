@@ -129,7 +129,7 @@
 //background-color: red;
 }
 
-.time-period:nth-child(2n-1) .time-right .stem:first-child{
+.time-period:nth-child(2n-1) .time-right .stem{
   width: 10px;
   height: 60%;
   background-color: #945d0f;
@@ -142,23 +142,49 @@
   border-top-right-radius: 10px;
 }
 
-.time-period:nth-child(2n-1) .time-right .stem:nth-child(2){
+.time-period:nth-child(2n-1) .time-right .stem:before{
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 56%;
+  background-color: #945d0f;
+  transform: rotate(-20deg);
+  border-left: 2px solid #531b0a;
+  border-right: 2px solid #531b0a;
+  top: -24px;
+  left: -8px;
+}
+
+.time-period:nth-child(2n) .time-left .stem{
   width: 10px;
   height: 60%;
   background-color: #945d0f;
-  transform: rotate(40deg);
+  transform: rotate(-60deg);
   border-left: 2px solid #531b0a;
   border-right: 2px solid #531b0a;
   position: relative;
-  top: 0px;
-  left: 35px;
+  top: 30px;
+  right: 5px;
+  border-top-left-radius: 10px;
   border-bottom-right-radius: 5px;
+}
+
+ .time-period:nth-child(2n) .time-left .stem:before{
+   content: '';
+   position: absolute;
+   width: 6px;
+   height: 56%;
+   background-color: #945d0f;
+   transform: rotate(13deg);
+   border-left: 2px solid #531b0a;
+   border-right: 2px solid #531b0a;
+   bottom: 50px;
+   right: -6px;
 }
 
 /* start flowers */
 .flowers{
   position: relative;
-
 }
 
 .time-period:nth-child(2n-1) .time-right .flowers .flower{
@@ -171,7 +197,8 @@
   border-bottom-left-radius: 100%;
 }
 
-.time-period:nth-child(2n-1) .time-right .flowers .flower:before{
+.time-period:nth-child(2n-1) .time-right .flowers .flower:before,
+.time-period:nth-child(2n) .time-left .flowers .flower:before {
   content: '';
   position: absolute;
   width: 20px;
@@ -220,22 +247,54 @@
   transform: rotate(300deg);
 }
 
-/* end flowers */
-
-.time-period:nth-child(2n) .time-left .stem:first-child{
-  width: 10px;
-  height: 60%;
-  background-color: #945d0f;
-  transform: rotate(-60deg);
-  border-left: 2px solid #531b0a;
-  border-right: 2px solid #531b0a;
-  position: relative;
-  top: 30px;
-  right: 5px;
-  border-top-left-radius: 10px;
+.time-period:nth-child(2n) .time-left .flowers .flower{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: #fec6c6;
+  border: 1px solid rgba(234, 172, 172, .7);
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 100%;
 }
 
-.time-period:nth-child(2n) .time-left .stem:nth-child(2){
+.time-period:nth-child(2n) .time-left .flowers .flower:first-child{
+  top: 3px;
+  right: 56px;
+}
+
+.time-period:nth-child(2n) .time-left .flowers .flower:nth-child(2){
+  top: -3px;
+  right: 44px;
+  transform: rotate(60deg);
+}
+
+.time-period:nth-child(2n) .time-left .flowers .flower:nth-child(3){
+  top: 6px;
+  right: 34px;
+  transform: rotate(120deg);
+}
+
+.time-period:nth-child(2n) .time-left .flowers .flower:nth-child(4){
+  top: 20px;
+  right: 35px;
+  transform: rotate(180deg);
+}
+
+.time-period:nth-child(2n) .time-left .flowers .flower:nth-child(5){
+  top: 24px;
+  right: 49px;
+  transform: rotate(240deg);
+}
+
+.time-period:nth-child(2n) .time-left .flowers .flower:nth-child(6){
+  top: 15px;
+  right: 58px;
+  transform: rotate(300deg);
+}
+
+/* end flowers */
+
+/* .time-period:nth-child(2n) .time-left .stem:nth-child(2){
   width: 10px;
   height: 60%;
   background-color: #945d0f;
@@ -246,7 +305,7 @@
   bottom: 1px;
   right: 51px;
   border-bottom-left-radius: 5px;
-}
+} */
 
   /* background: url(../../resource/img/illust-tree.png);
   background-position: center;
