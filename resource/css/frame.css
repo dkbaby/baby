@@ -294,23 +294,44 @@
 
 /* end flowers */
 
-/* .time-period:nth-child(2n) .time-left .stem:nth-child(2){
-  width: 10px;
-  height: 60%;
-  background-color: #945d0f;
-  transform: rotate(-40deg);
-  border-left: 2px solid #531b0a;
-  border-right: 2px solid #531b0a;
+.time-period:nth-child(2n-1) .time-right a.message{
+  width: 65%;
+  height: 70px;
   position: relative;
-  bottom: 1px;
-  right: 51px;
-  border-bottom-left-radius: 5px;
-} */
+  background: #e59a9a;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
 
-  /* background: url(../../resource/img/illust-tree.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 95%; */
+
+.time-period:nth-child(6n-5) .time-right a.message{
+  top: 64px;
+  left: 31px;
+  transform: rotate(15deg);
+}
+
+.time-period:nth-child(2n-1) .time-right a.message::before{
+  content: '';
+  background: white;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 24px;
+  left: 11px;
+  border-radius: 68%;
+}
+
+.time-period:nth-child(6n-3) .time-right a.message{
+  top: 89px;
+  left: 7px;
+  transform: rotate(30deg);
+}
+
+.time-period:nth-child(6n-1) .time-right a.message{
+  top: 67px;
+  left: 26px;
+  transform: rotate(22deg);
+}
 
 .time-period .time-divide{
   width: 40px;
