@@ -294,6 +294,7 @@
 
 /* end flowers */
 
+/* start message */
 .time-period:nth-child(2n-1) .time-right a.message{
   width: 65%;
   height: 53px;
@@ -302,14 +303,6 @@
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
 }
-
-
-.time-period:nth-child(6n-5) .time-right a.message{
-  top: 64px;
-  left: 31px;
-  transform: rotate(15deg);
-}
-
 .time-period:nth-child(2n-1) .time-right a.message::before{
   content: '';
   background: white;
@@ -321,6 +314,12 @@
   border-radius: 68%;
 }
 
+.time-period:nth-child(6n-5) .time-right a.message{
+  top: 64px;
+  left: 31px;
+  transform: rotate(15deg);
+}
+
 .time-period:nth-child(6n-3) .time-right a.message{
   top: 89px;
   left: 7px;
@@ -328,10 +327,49 @@
 }
 
 .time-period:nth-child(6n-1) .time-right a.message{
-  top: 67px;
-  left: 26px;
-  transform: rotate(22deg);
+  top: 54px;
+  left: 17px;
+  transform: rotate(3deg);
 }
+
+.time-period:nth-child(2n) .time-left a.message{
+    width: 65%;
+    height: 53px;
+    position: relative;
+    background: #e59a9a;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.time-period:nth-child(2n) .time-left a.message::before{
+  content: '';
+  background: white;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 17px;
+  right: 11px;
+  border-radius: 68%;
+}
+
+.time-period:nth-child(6n-4) .time-left a.message{
+   top: 85px;
+   left: -14px;
+   transform: rotate(-25deg);
+}
+
+.time-period:nth-child(6n-2) .time-left a.message{
+	top: 94px;
+    left: 0px;
+    transform: rotate(-43deg);
+}
+
+.time-period:nth-child(6n) .time-left a.message{
+    top: 78px;
+    left: -1px;
+    transform: rotate(-17deg);
+}
+
+/* end message */
 
 .time-period .time-divide{
   width: 40px;
