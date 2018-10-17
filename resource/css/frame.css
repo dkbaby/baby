@@ -15,16 +15,18 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background: rgba(255, 255, 255, .9);
 }
 
 .main-header img{
   max-height: 55px;
+  margin-left: 5%;
 }
 
 .main-header .main-menu{
   position: absolute;
   top: 50%;
-  right: 5%;
+  right: 10%;
   transform: translate(-50%, -50%);
   cursor: pointer;
 }
@@ -98,6 +100,10 @@
   width: 95%;
   margin: 0 auto;
   left: 2.5%;
+}
+
+.size-boxing-header{
+  width: 100%;
 }
 
 /******* START TIME  *******/
@@ -306,6 +312,7 @@
   justify-content: flex-end;
   text-align: center;
   align-items: center;
+  cursor: pointer;
 }
 .time-period:nth-child(2n-1) .time-right a.message::before{
   content: '';
@@ -316,6 +323,16 @@
   top: 17px;
   left: 11px;
   border-radius: 68%;
+}
+
+.time-period:nth-child(2n-1) .time-right a.message::after{
+  content: '';
+  position: absolute;
+  border-radius: 68%;
+  border: 3px solid #777777;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
 }
 
 .time-period:nth-child(2n-1) .time-right a.message span{
@@ -341,16 +358,37 @@
   transform: rotate(15deg);
 }
 
+.time-period:nth-child(6n-5) .time-right a.message::after{
+  top: 16px;
+  left: -40px;
+  width: 58px;
+  height: 29px;
+}
+
 .time-period:nth-child(6n-3) .time-right a.message{
   top: 89px;
   left: 7px;
   transform: rotate(30deg);
 }
 
+.time-period:nth-child(6n-3) .time-right a.message::after{
+  top: 16px;
+  left: -42px;
+  width: 59px;
+  height: 29px;
+}
+
 .time-period:nth-child(6n-1) .time-right a.message{
   top: 54px;
   left: 17px;
   transform: rotate(3deg);
+}
+
+.time-period:nth-child(6n-1) .time-right a.message::after{
+  top: 12px;
+  left: -37px;
+  width: 53px;
+  height: 29px;
 }
 
 .time-period:nth-child(2n) .time-left a.message{
@@ -364,6 +402,7 @@
     justify-content: flex-start;
     text-align: center;
     align-items: center;
+    z-index: 1;
 }
 .time-period:nth-child(2n) .time-left a.message::before{
   content: '';
@@ -374,6 +413,16 @@
   top: 17px;
   right: 11px;
   border-radius: 68%;
+}
+
+.time-period:nth-child(2n) .time-left a.message::after{
+  content: '';
+  position: absolute;
+  border-radius: 68%;
+  border: 3px solid #777777;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
 }
 
 .time-period:nth-child(2n) .time-left a.message span{
@@ -400,10 +449,24 @@
    transform: rotate(-25deg);
 }
 
+.time-period:nth-child(6n-4) .time-left a.message::after{
+  top: 12px;
+  left: 102px;
+  width: 68px;
+  height: 29px;
+}
+
 .time-period:nth-child(6n-2) .time-left a.message{
 	top: 94px;
-    left: 0px;
-    transform: rotate(-43deg);
+  left: 0px;
+  transform: rotate(-43deg);
+}
+
+.time-period:nth-child(6n-2) .time-left a.message::after{
+  top: 12px;
+  left: 102px;
+  width: 56px;
+  height: 29px;
 }
 
 .time-period:nth-child(6n) .time-left a.message{
@@ -412,6 +475,12 @@
     transform: rotate(-17deg);
 }
 
+.time-period:nth-child(6n) .time-left a.message::after{
+  top: 12px;
+  left: 102px;
+  width: 52px;
+  height: 29px;
+}
 /* end message */
 
 .time-period .time-divide{
@@ -506,7 +575,7 @@ text-transform: uppercase;
   .wrap{
     //background: #fafafa url(../imgs/content_inner_bg.png);
   }
-  .size-boxing{
+  .size-boxing, .main-header{
     width: 60%;
     left: 20%;
   }
@@ -527,4 +596,46 @@ text-transform: uppercase;
     width: 80%;
     min-height: 30%;
   }
+
+  .time-period:nth-child(6n-5) .time-right a.message::after{
+    top: 16px;
+    left: -40px;
+    width: 58px;
+    height: 29px;
+  }
+
+  .time-period:nth-child(6n-3) .time-right a.message::after{
+    top: 16px;
+    left: -26px;
+    width: 46px;
+    height: 29px;
+  }
+
+  .time-period:nth-child(6n-1) .time-right a.message::after{
+    top: 12px;
+    left: -37px;
+    width: 53px;
+    height: 29px;
+  }
+
+  .time-period:nth-child(6n-4) .time-left a.message::after {
+      top: 12px;
+      left: 183px;
+      width: 68px;
+      height: 29px;
+  }
+  .time-period:nth-child(6n-2) .time-left a.message::after {
+      top: 12px;
+      left: 184px;
+      width: 42px;
+      height: 29px;
+  }
+
+  .time-period:nth-child(6n) .time-left a.message::after {
+    top: 12px;
+    left: 184px;
+    width: 52px;
+    height: 29px;
+  }
+
 }
