@@ -27,7 +27,7 @@ var app1 = new Vue({
   },
   computed: {
 
-  }
+  },
 });
 (function ($) {
     // requestAnimationFrame Polyfill
@@ -118,8 +118,9 @@ var app1 = new Vue({
             var petal = sakura.clone();
             var size = getRandomInt(options.minSize, options.maxSize);
             var startPosLeft = Math.random() * documentWidth - 100;
-            var startPosTop = -((Math.random() * 20) + 15);
-
+            //var startPosTop = -((Math.random() * 20) + 15);
+			var startPosTop = 500;
+			
             // Apply Event Listener to remove petals that reach the bottom of the page.
             prefixedEvent(petal, 'AnimationEnd', function () {
                 $(this).remove();
