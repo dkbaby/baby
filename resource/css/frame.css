@@ -296,7 +296,7 @@
 
 .time-period:nth-child(2n-1) .time-right a.message{
   width: 65%;
-  height: 70px;
+  height: 53px;
   position: relative;
   background: #e59a9a;
   border-top-left-radius: 50px;
@@ -316,7 +316,7 @@
   width: 20px;
   height: 20px;
   position: absolute;
-  top: 24px;
+  top: 17px;
   left: 11px;
   border-radius: 68%;
 }
