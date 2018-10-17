@@ -2,18 +2,13 @@ var app1 = new Vue({
   el: '.wrap',
   data: {
     timePeriod : [
-      { text: 'JavaScript 배우기' },
-      { text: 'Vue 배우기' },
-      { text: 'Vue 배우기' },
-      { text: 'Vue 배우기' },
-      { text: 'Vue 배우기' },
-      { text: 'Vue 배우기' },
-      { text: 'Vue 배우기' },
-      { text: 'Vue 배우기' },
-      { text: 'Vue 배우기' },
-      { text: 'Vue 배우기' },
-      { text: 'Vue 배우기' },
-      { text: '무언가 멋진 것을 만들기' }
+      { period: '임신 4~12주', link: '/test1'  },
+      { period: '임신 12~16주', link: '/test1'  },
+      { period: '임신 16~막달전', link: '/test1'  },
+      { period: '막달 출산전', link: '/test1'  },
+      { period: '출산후~2주', link: '/test1'  },
+      { period: '2주~1개월', link: '/test1'  },
+      { period: '1~2개월', link: '/test1'  },
     ],
     isActive: false
   },
@@ -120,7 +115,7 @@ var app1 = new Vue({
             var startPosLeft = Math.random() * documentWidth - 100;
             //var startPosTop = -((Math.random() * 20) + 15);
 			var startPosTop = 500;
-			
+
             // Apply Event Listener to remove petals that reach the bottom of the page.
             prefixedEvent(petal, 'AnimationEnd', function () {
                 $(this).remove();
