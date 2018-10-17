@@ -296,7 +296,7 @@
 
 /* start message */
 .time-period:nth-child(2n-1) .time-right a.message{
-  width: 75%; 
+  width: 75%;
   height: 53px;
   position: relative;
   background: #e59a9a;
@@ -332,6 +332,7 @@
   margin-right: 3%;
   padding: 4% 0px;
   min-height: 60%;
+  word-break: keep-all;
 }
 
 .time-period:nth-child(6n-5) .time-right a.message{
@@ -389,6 +390,7 @@
   margin-left: 3%;
   padding: 4% 0px;
   min-height: 60%;
+  word-break: keep-all;
 }
 
 
