@@ -302,7 +302,8 @@
 
 /* start message */
 .time-period:nth-child(2n-1) .time-right a.message{
-  width: 75%;
+  /*width: 75%; */
+  width: 120px;
   height: 53px;
   position: relative;
   background: #e59a9a;
@@ -342,13 +343,15 @@
   font-weight: 300;
   text-transform: uppercase;
   color: #777777;
-  width: 51%;
+  /*width: 51%; */
   background: white;
   width: 60%;
   display: inline-block;
   margin-right: 3%;
   padding: 4% 0px;
-  min-height: 60%;
+  min-height: 50%;
+  max-height: 60%;
+  /*max-weight:*/
   word-break: keep-all;
 }
 
@@ -392,7 +395,7 @@
 }
 
 .time-period:nth-child(2n) .time-left a.message{
-    width: 75%;
+	width: 120px;
     height: 53px;
     position: relative;
     background: #e59a9a;
@@ -571,7 +574,7 @@ letter-spacing: 3px;
 text-transform: uppercase;
 */
 
-@media all and (min-width:1200px){
+@media all and (min-width:900px){
   .wrap{
     //background: #fafafa url(../imgs/content_inner_bg.png);
   }
@@ -587,16 +590,17 @@ text-transform: uppercase;
 
   .time-period:nth-child(2n) .time-left a.message,
   .time-period:nth-child(2n-1) .time-right a.message{
-    width: 50%;
+    /*width: 50%; */
   }
 
   .time-period:nth-child(2n) .time-left a.message span,
   .time-period:nth-child(2n-1) .time-right a.message span{
     font-size: 15px;
-    width: 80%;
-    min-height: 30%;
+    /*width: 80%;
+    min-height: 30%; */
   }
 
+/*
   .time-period:nth-child(6n-5) .time-right a.message::after{
     top: 16px;
     left: -40px;
@@ -637,5 +641,5 @@ text-transform: uppercase;
     width: 52px;
     height: 29px;
   }
-
+*/
 }
