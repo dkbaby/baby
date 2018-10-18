@@ -13,7 +13,7 @@ var app1 = new Vue({
     isActive: false
   },
   methods:{
-    myFilter: function(){
+    menuClick: function(){
       this.isActive = !this.isActive;
     },
     isEven :function(){

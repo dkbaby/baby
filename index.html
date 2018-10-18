@@ -26,11 +26,11 @@
       <header class="main-header size-boxing-header">
         <img src="resource/img/logo.png" />
         <div class="main-menu"
-          @click="isActive = !isActive"
+          @click="menuClick"
           :class="{active: isActive}">
             <div class="menu-line" ></div>
         </div>
-		<div class="menu-list">
+		<div :class="{active: isActive}" class="menu-list">
 			<ul>
 				<li>Home.</li>
 				<li>About Me.</li>
