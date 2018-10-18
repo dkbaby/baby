@@ -617,6 +617,31 @@
 
 /******* END TIME  *******/
 
+/******* START BOTTOM  *******/
+.flowers-bottom{
+  position: relative;
+}
+
+.flowers-bottom .flower{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: #fec6c6;
+  border: 1px solid rgba(234, 172, 172, .7);
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  z-index: 1;
+  bottom: 0;
+}
+
+/* .flowers-bottom .flower:first-child{
+  transform: rotate(30deg);
+  left: 100px;
+} */
+
+/******* END BOTTOM  *******/
+
+
 .main-section > h1 {
   text-align: center;
   padding: 45px;

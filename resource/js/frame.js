@@ -10,7 +10,20 @@ var app1 = new Vue({
       { period: '2주~1개월', link: '/test1'  },
       { period: '1~2개월', link: '/test1'  },
     ],
-    isActive: false
+    isActive: false,
+    fcount: 100
+  },
+  mounted(){
+    var flowers = document.getElementsByClassName('flowers-bottom')[0];
+    //범위는 300까지
+    for (var i = 0; i < this.fcount; i++) {
+      var left = Math.floor(Math.random()* 300) ;
+      var rotate = Math.floor(Math.random()* 360) ;
+
+      var setting = 'transform: rotate('+ rotate +'deg);'
+                + 'left: ' + (left-150) +'px;'
+      flowers.getElementsByClassName("flower")[i].setAttribute("style", setting);
+    }
   },
   methods:{
     menuClick: function(){
@@ -19,9 +32,6 @@ var app1 = new Vue({
     isEven :function(){
       return this.index % 2 != 0 ? true: false
     }
-  },
-  computed: {
-
   },
 });
 (function ($) {
