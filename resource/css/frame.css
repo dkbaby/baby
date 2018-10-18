@@ -406,7 +406,7 @@
 }
 
 .time-period:nth-child(2n) .time-left a.message{
-	width: 120px;
+	  width: 120px;
     height: 53px;
     position: relative;
     background: #e59a9a;
@@ -417,6 +417,7 @@
     text-align: center;
     align-items: center;
     z-index: 1;
+    cursor: pointer;
 }
 .time-period:nth-child(2n) .time-left a.message::before{
   content: '';

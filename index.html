@@ -48,7 +48,7 @@
           <ul>
             <li v-for="(t, index) in timePeriod" class="time-period">
               <div class="time-left">
-                <a class="message" v-if="index % 2">
+                <a :href="t.link" class="message" v-if="index % 2">
                   <span> {{t.period}} </span>
                 </a>
                 <div class="stem"></div>
@@ -65,7 +65,7 @@
                 <div class="flowers">
                   <div class="flower" v-for="f in 6"></div>
                 </div>
-                <a class="message" v-if="(index % 2)+1">
+                <a :href="t.link" class="message" v-if="(index % 2)+1">
                   <span> {{t.period}} </span>
                 </a>
               </div>
