@@ -9,13 +9,13 @@ var app1 = new Vue({
 	 { link: 'contact', text:'Contact.'}
 	],
     timePeriod : [
-      { period: '임신 4~12주', link: '/test1'  },
-      { period: '임신 12~16주', link: '/test1'  },
-      { period: '임신 16~막달전', link: '/test1'  },
-      { period: '막달 출산전', link: '/test1'  },
-      { period: '출산후~2주', link: '/test1'  },
-      { period: '2주~1개월', link: '/test1'  },
-      { period: '1~2개월', link: '/test1'  },
+      { period: '임신 4~12주', link: 'life/data01'  },
+      { period: '임신 12~16주', link: 'life//data02'  },
+      { period: '임신 16~막달전', link: 'life/data03'  },
+      { period: '막달 출산전', link: 'life/data04'  },
+      { period: '출산후~2주', link: 'life/data05'  },
+      { period: '2주~1개월', link: 'life/data06'  },
+      { period: '1~2개월', link: 'life/data07'  },
     ],
     isActive: false,
     fcount: 100
