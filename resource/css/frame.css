@@ -84,7 +84,7 @@
   transform: rotate(135deg);
 }
 
-.main-header .menu-list{
+.menu-list{
   position: fixed;
   /* top: -100%; */
   top: 100px;
@@ -98,12 +98,12 @@
   /* transition: .5s; */
 }
 
-.main-header .menu-list.active{
+.menu-list.active{
   opacity: 1;
   z-index: 99999;
 }
 
-.main-header .menu-list li{
+.menu-list li{
   transform: translateY(20px);
   opacity: 0;
   margin: 50px 0;
@@ -114,35 +114,35 @@
   color: #000000;
 }
 
-.main-header .menu-list.active li{
+.menu-list.active li{
   transform: translateY(0);
   opacity: 1;
 }
-.main-header .menu-list ul li:nth-child(1) {
+.menu-list ul li:nth-child(1) {
   -webkit-transition: all .2s ease ;
   -moz-transition: all .2s ease;
   -o-transition: all .2s ease;
   transition: all .2s ease;
  }
-.main-header .menu-list ul li:nth-child(2) {
+.menu-list ul li:nth-child(2) {
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
 }
-.main-header .menu-list ul li:nth-child(3) {
+.menu-list ul li:nth-child(3) {
   -webkit-transition: all .4s ease;
   -moz-transition: all .4s ease;
   -o-transition: all .4s ease;
   transition: all .4s ease;
 }
-.main-header .menu-list ul li:nth-child(4) {
+.menu-list ul li:nth-child(4) {
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
   -o-transition: all .5s ease;
   transition: all .5s ease;
 }
-.main-header .menu-list ul li:nth-child(5) {
+.menu-list ul li:nth-child(5) {
   -webkit-transition: all .6s ease;
   -moz-transition: all .6s ease;
   -o-transition: all .6s ease;
