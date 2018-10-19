@@ -33,11 +33,7 @@
       </header>
 	   <div :class="{active: isActive}" class="menu-list">
 			<ul>
-				<li>Home.</li>
-				<li>About Me.</li>
-				<li>Baby Life.</li>
-				<li>Share Info.</li>
-				<li>Contact.</li>
+				<li v-for="m in menu"><a :href="m.link">{{m.text}}</a></li>
 			</ul>
 	  </div>	  
       <div class="container">

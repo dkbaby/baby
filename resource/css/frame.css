@@ -111,8 +111,12 @@
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #000000;
 }
+
+.menu-list li a{
+  color: #000000;	
+}
+
 
 .menu-list.active li{
   transform: translateY(0);

@@ -1,6 +1,13 @@
 var app1 = new Vue({
   el: '.wrap',
   data: {
+	menu: [
+	 { link: 'home', text:'Home.'},
+	 { link: 'intro', text:'About Me.'},
+	 { link: 'life', text:'Baby Life.'},
+	 { link: 'share', text:'Share Info.'},
+	 { link: 'contact', text:'Contact.'}
+	],
     timePeriod : [
       { period: '임신 4~12주', link: '/test1'  },
       { period: '임신 12~16주', link: '/test1'  },
