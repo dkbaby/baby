@@ -20,35 +20,19 @@ var app1 = new Vue({
     isActive: false,
     fcount: 50
   },
-  create(){
-    // function bottomFlowers(){
-    //   var flowers = document.getElementsByClassName('flowers-bottom')[0];
-    //   //범위는 300까지
-    //   for (var i = 0; i < this.fcount; i++) {
-    //     var left = Math.floor(Math.random()* 300) ;
-    //     var rotate = Math.floor(Math.random()* 360) ;
-    //
-    //     var setting = 'transform: rotate('+ rotate +'deg);'
-    //               + 'left: ' + (left-150) +'px;'
-    //     flowers.getElementsByClassName("flower")[i].setAttribute("style", setting);
-    //   };
-    // }
-  },
   mounted(){
-    function bottomFlowers(){
-      var flowers = document.getElementsByClassName('flowers-bottom')[0];
-      //범위는 300까지
-      for (var i = 0; i < this.fcount; i++) {
-        var left = Math.floor(Math.random()* 300) ;
-        var rotate = Math.floor(Math.random()* 360) ;
+    var flowers = document.getElementsByClassName('flowers-bottom')[0];
+    //범위는 300까지
+    for (var i = 0; i < this.fcount; i++) {
+      var left = Math.floor(Math.random()* 300) ;
+      var rotate = Math.floor(Math.random()* 360) ;
 
-        var setting = 'transform: rotate('+ rotate +'deg);'
-                  + 'left: ' + (left-150) +'px;'
-        flowers.getElementsByClassName("flower")[i].setAttribute("style", setting);
-      };
-    }
+      var setting = 'transform: rotate('+ rotate +'deg);'
+                + 'left: ' + (left-150) +'px;'
+      flowers.getElementsByClassName("flower")[i].setAttribute("style", setting);
+    };
+
     //Sakura
-    function test() {
         var lastTime = 0;
         var vendors = ['ms', 'moz', 'webkit', 'o'];
 
@@ -74,8 +58,6 @@ var app1 = new Vue({
             window.cancelAnimationFrame = function (id) {
                 clearTimeout(id);
             };
-    };
-
 
     $.fn.sakura = function (options) {
         // We rely on these random values a lot, so define a helper function for it.
@@ -104,7 +86,7 @@ var app1 = new Vue({
             fallSpeed: 3,
             maxSize: 14,
             minSize: 9,
-            newOn: 500,
+            newOn: 300,
             swayAnimations: ['sway-0', 'sway-1', 'sway-2', 'sway-3', 'sway-4', 'sway-5', 'sway-6', 'sway-7', 'sway-8']
         };
 
@@ -137,6 +119,7 @@ var app1 = new Vue({
             var startPosLeft = Math.random() * documentWidth - 100;
             //var startPosTop = -((Math.random() * 20) + 15);
             var startPosTop = 500;
+
             // Apply Event Listener to remove petals that reach the bottom of the page.
             prefixedEvent(petal, 'AnimationEnd', function () {
                 $(this).remove();
