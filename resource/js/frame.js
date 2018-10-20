@@ -47,7 +47,7 @@ var app1 = new Vue({
         flowers.getElementsByClassName("flower")[i].setAttribute("style", setting);
       };
     }
-    Sakura
+    //Sakura
     function test() {
         var lastTime = 0;
         var vendors = ['ms', 'moz', 'webkit', 'o'];
@@ -104,7 +104,7 @@ var app1 = new Vue({
             fallSpeed: 3,
             maxSize: 14,
             minSize: 9,
-            newOn: 100,
+            newOn: 500,
             swayAnimations: ['sway-0', 'sway-1', 'sway-2', 'sway-3', 'sway-4', 'sway-5', 'sway-6', 'sway-7', 'sway-8']
         };
 
