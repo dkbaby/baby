@@ -21,18 +21,18 @@ var app1 = new Vue({
     fcount: 50
   },
   create(){
-    function bottomFlowers(){
-      var flowers = document.getElementsByClassName('flowers-bottom')[0];
-      //범위는 300까지
-      for (var i = 0; i < this.fcount; i++) {
-        var left = Math.floor(Math.random()* 300) ;
-        var rotate = Math.floor(Math.random()* 360) ;
-
-        var setting = 'transform: rotate('+ rotate +'deg);'
-                  + 'left: ' + (left-150) +'px;'
-        flowers.getElementsByClassName("flower")[i].setAttribute("style", setting);
-      };
-    }
+    // function bottomFlowers(){
+    //   var flowers = document.getElementsByClassName('flowers-bottom')[0];
+    //   //범위는 300까지
+    //   for (var i = 0; i < this.fcount; i++) {
+    //     var left = Math.floor(Math.random()* 300) ;
+    //     var rotate = Math.floor(Math.random()* 360) ;
+    //
+    //     var setting = 'transform: rotate('+ rotate +'deg);'
+    //               + 'left: ' + (left-150) +'px;'
+    //     flowers.getElementsByClassName("flower")[i].setAttribute("style", setting);
+    //   };
+    // }
   },
   mounted(){
     // function bottomFlowers(){
