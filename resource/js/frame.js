@@ -18,7 +18,7 @@ var app1 = new Vue({
       { period: '1~2개월', link: 'life/data07'  },
     ],
     isActive: false,
-    fcount: 100
+    fcount: 30
   },
   mounted(){
     var flowers = document.getElementsByClassName('flowers-bottom')[0];
