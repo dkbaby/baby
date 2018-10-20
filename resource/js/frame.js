@@ -86,7 +86,7 @@ var app1 = new Vue({
             fallSpeed: 3,
             maxSize: 14,
             minSize: 9,
-            newOn: 300,
+            newOn: 500,
             swayAnimations: ['sway-0', 'sway-1', 'sway-2', 'sway-3', 'sway-4', 'sway-5', 'sway-6', 'sway-7', 'sway-8']
         };
 
