@@ -21,29 +21,21 @@ var app1 = new Vue({
     fcount: 50
   },
   mounted(){
-    var flowers = document.getElementsByClassName('flowers-bottom')[0];
-    //범위는 300까지
-    for (var i = 0; i < this.fcount; i++) {
-      var left = Math.floor(Math.random()* 300) ;
-      var rotate = Math.floor(Math.random()* 360) ;
 
-      var setting = 'transform: rotate('+ rotate +'deg);'
-                + 'left: ' + (left-150) +'px;'
-      flowers.getElementsByClassName("flower")[i].setAttribute("style", setting);
+    function bottomFlowers(){
+      var flowers = document.getElementsByClassName('flowers-bottom')[0];
+      //범위는 300까지
+      for (var i = 0; i < this.fcount; i++) {
+        var left = Math.floor(Math.random()* 300) ;
+        var rotate = Math.floor(Math.random()* 360) ;
+
+        var setting = 'transform: rotate('+ rotate +'deg);'
+                  + 'left: ' + (left-150) +'px;'
+        flowers.getElementsByClassName("flower")[i].setAttribute("style", setting);
+      };
     }
-  },
-  methods:{
-    menuClick: function(){
-      this.isActive = !this.isActive;
-    },
-    isEven :function(){
-      return this.index % 2 != 0 ? true: false
-    }
-  },
-});
-(function ($) {
-    // requestAnimationFrame Polyfill
-    (function () {
+    //Sakura
+    function test() {
         var lastTime = 0;
         var vendors = ['ms', 'moz', 'webkit', 'o'];
 
@@ -69,9 +61,9 @@ var app1 = new Vue({
             window.cancelAnimationFrame = function (id) {
                 clearTimeout(id);
             };
-    }());
+    };
 
-    // Sakura function.
+
     $.fn.sakura = function (options) {
         // We rely on these random values a lot, so define a helper function for it.
         function getRandomInt(min, max) {
@@ -131,8 +123,7 @@ var app1 = new Vue({
             var size = getRandomInt(options.minSize, options.maxSize);
             var startPosLeft = Math.random() * documentWidth - 100;
             //var startPosTop = -((Math.random() * 20) + 15);
-			var startPosTop = 500;
-
+            var startPosTop = 500;
             // Apply Event Listener to remove petals that reach the bottom of the page.
             prefixedEvent(petal, 'AnimationEnd', function () {
                 $(this).remove();
@@ -159,8 +150,6 @@ var app1 = new Vue({
                 })
                 .appendTo('body');
         };
-
-
         // Recalculate documentHeight and documentWidth on browser resize.
         $(window).resize(function () {
             documentHeight = $(document).height();
@@ -170,4 +159,18 @@ var app1 = new Vue({
         // Finally: Start adding petals.
         requestAnimationFrame(petalCreator);
     };
-}(jQuery));
+
+    $(document).ready(function () {
+      $('.main-section').sakura();
+    });
+
+  },
+  methods:{
+    menuClick: function(){
+      this.isActive = !this.isActive;
+    },
+    isEven :function(){
+      return this.index % 2 != 0 ? true: false
+    }
+  },
+});
