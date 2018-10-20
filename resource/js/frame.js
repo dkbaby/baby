@@ -144,7 +144,7 @@ var app1 = new Vue({
                     'margin-top': startPosTop,
                     width: size
                 })
-                .appendTo('body');
+                .appendTo('.container');
         };
         // Recalculate documentHeight and documentWidth on browser resize.
         $(window).resize(function () {
