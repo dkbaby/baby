@@ -1,3 +1,8 @@
+// import Life  from '../html/life.vue'
+// import Main   from '../html/main.vue'
+
+
+//const Life =
 var app1 = new Vue({
   el: '.wrap',
   data: {

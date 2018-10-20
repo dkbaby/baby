@@ -90,15 +90,17 @@
   top: 100px;
   left: 0;
   background: rgba(255, 255, 255, .8);
-  width: 50%;
+  width: 100%;
   height: 100%;
   text-align: center;
   opacity: 0;
+  visibility: hidden;
 }
 
 .menu-list.active{
   opacity: 1;
   z-index: 99999;
+  visibility: visible;
 }
 
 .menu-list li{
