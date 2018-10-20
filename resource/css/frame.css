@@ -102,7 +102,7 @@
 }
 
 .menu-list li{
-  transform: translateY(20px);
+  /* transform: translateY(20px); */
   opacity: 0;
   margin: 50px 0;
   font-size: 14px;
@@ -117,12 +117,12 @@
 }
 
 .menu-list.active li{
-  transform: translateY(0);
+  /* transform: translateY(0); */
   opacity: 1;
-  -webkit-transition: all .5s ease .2s;
+  /* -webkit-transition: all .5s ease .2s;
 	-moz-transition: all .5s ease .2s;
 	-o-transition: all .5s ease .2s;
-	transition: all .5s ease .2s;
+	transition: all .5s ease .2s; */
 }
 /******* END HEADER  *******/
 
