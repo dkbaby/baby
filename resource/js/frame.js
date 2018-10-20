@@ -1,8 +1,5 @@
 // import Life  from '../html/life.vue'
 // import Main   from '../html/main.vue'
-
-
-//const Life =
 var app1 = new Vue({
   el: '.wrap',
   data: {
@@ -23,7 +20,7 @@ var app1 = new Vue({
       { period: '1~2개월', link: 'life/data07'  },
     ],
     isActive: false,
-    fcount: 50
+    fcount: 100
   },
   mounted(){
     var flowers = document.getElementsByClassName('flowers-bottom')[0];
